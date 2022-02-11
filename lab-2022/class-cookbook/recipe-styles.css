@@ -1,6 +1,87 @@
+@font-face {
+    font-family:"cooper-black-std";
+    src:url("https://use.typekit.net/af/9044bf/000000000000000000013102/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/9044bf/000000000000000000013102/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/9044bf/000000000000000000013102/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+    font-display:auto;font-style:italic;font-weight:400;
+    }
+    
+@font-face {
+    font-family:"cooper-black-std";
+    src:url("https://use.typekit.net/af/4e1b68/000000000000000000013101/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/4e1b68/000000000000000000013101/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/4e1b68/000000000000000000013101/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
+}
+
+body {
+    background-color: #c44536;
+}
+
 h1 {
-    color: #564256;
-    font-style: normal;
+    font-family: cooper-black-std,serif;
     font-weight: bold;
+    font-style: normal;
     font-size: 40px;
+    margin-bottom: 0;
+    color: #e4dfda;
+}
+
+p {
+    padding-left: 2.5em;
+    color: #e4dfda;
+}
+
+h3 {
+    font-weight: normal;
+    color: #e4dfda;
+}
+
+h4 {
+    font-weight: normal;
+    padding-left: 2.5em;
+    color: #e4dfda;
+}
+
+.headings {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e4dfda;
+}
+
+.bodies {
+    font-family: 'Courier New', Courier, monospace;
+    color: #e4dfda;
+}
+
+.div-container-1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ingredients-div {
+    width: 200px;
+}
+
+.extra-div {
+    width: 340px;
+}
+
+.everything {
+    position: absolute;
+    font-size: 12px;
+    width: 800px;
+    padding-left: 200px;
+}
+
+.moving-text {
+    position: absolute;
+    font-size: 100px;
+    font-weight: 400;
+    font-style: italic;
+    color: #d4b483;
+    z-index: -1;
+    width: 1000px;
+    margin-top: 60px;
+}
+
+marquee {
+    height: 240px;
+    margin-top: -200px;
+    margin-bottom: 0;
 }
