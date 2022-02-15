@@ -1,0 +1,64 @@
+/* this makes our grid responsive- we'l talk more in coming weeks */
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#instructions {
+  background-color: white;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+#loki-div {
+  border: solid black 1px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.moving-text {
+  font-family: input-mono,monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  width: 1600px;
+}
+
+.loki-avatar {
+  position: absolute;
+  z-index: -1;
+  top: 140px;
+}
+
+.loki-link {
+
+}
+
+.loki-link:link {
+  color: rgb(255, 79, 25);
+}
+
+.loki-link:visited {
+  color: rgb(255, 79, 25);
+}
+
+.loki-body {
+  font-family: nautica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 79, 25);
+  align-self: flex-end;
+}
+
+/* add your ids below */
