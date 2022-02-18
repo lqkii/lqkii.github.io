@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Migra';
+    src: url('Migra-Extralight.woff2') format('woff2'),
+        url('Migra-Extralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Migra';
+    src: url('Migra-Extrabold.woff2') format('woff2'),
+        url('Migra-Extrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Migra';
+    src: url('Migra-Regular.woff2') format('woff2'),
+        url('Migra-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Migra';
+    src: url('MigraItalic-ExtralightItalic.woff2') format('woff2'),
+        url('MigraItalic-ExtralightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Migra';
+    src: url('MigraItalic-Italic.woff2') format('woff2'),
+        url('MigraItalic-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Migra';
+    src: url('MigraItalic-ExtraboldItalic.woff2') format('woff2'),
+        url('MigraItalic-ExtraboldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    padding: 200px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0%;
+}
+
+.navbar li {
+    display: inline;
+    font-family: Migra;
+    font-weight: 400;
+}
+
+.navbar li a {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+
+.navbar li a:hover {
+    color: rgb(212, 97, 97);
+}
+
+h1 {
+    font-family: Migra;
+    font-size: 4em;
+    margin-top: 100px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ol {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    align-self: center;
+}
+
+video {
+    align-self: center;
+}
