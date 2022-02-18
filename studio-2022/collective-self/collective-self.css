@@ -57,6 +57,7 @@ body {
     padding-top: 10px;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .navbar {
@@ -88,12 +89,15 @@ body {
 
 .navbar li a:hover {
     color: rgb(212, 97, 97);
+    background-color: rgb(32, 32, 32);
 }
 
 h1 {
     font-family: Migra;
     font-size: 4em;
     margin-top: 100px;
+    color: black;
+    letter-spacing: normal;
 }
 
 h2 {
@@ -101,10 +105,13 @@ h2 {
     font-size: 2em;
     font-weight: 400;
     margin-bottom: 6px;
+    letter-spacing: 0px;
 }
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1px;
+    font-size: 1em;
 }
 
 ol {
