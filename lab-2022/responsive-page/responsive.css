@@ -1,0 +1,125 @@
+body {
+    padding: 4%;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #D5DED3;
+    }
+
+    h1 {
+        font-family: los-feliz, serif;
+        font-size: 4em;
+        margin-top: 10%;
+    }
+
+    h2 {
+        
+    }
+
+    p {
+        line-height: 1.4em;
+    }
+  }
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: #cae2ce;
+        padding: 6%;
+    }
+
+    h1 {
+        font-family: trilby, serif;
+        font-size: 4.6em;
+    }
+
+    h2 {
+        font-size: 1em;
+        margin-bottom: 6%;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #a8c59e;
+        padding: 10%;
+    }
+
+    h1 {
+        font-family: bely, serif;
+        margin-bottom: -0.8%;
+        font-size: 5em;
+    }
+
+    h2 {
+        
+    }
+
+    p {
+        
+    }
+  }
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-color: #8daf82;
+        padding: 12%;
+    }
+
+    h1 {
+        font-family: bely-display, sans-serif;
+        margin-top: -4%;
+    }
+
+    h2 {
+        margin-bottom: 4%;
+    }
+
+    p {
+
+    }
+  }
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: #77A36D;
+        padding: 16%;
+    }
+
+    h1 {
+        font-family: superior-title, serif;
+        margin-bottom: -3%;
+        margin-top: -6%;
+    }
+
+    h2 {
+        
+    }
+
+    p {
+        
+    }
+  }
+
