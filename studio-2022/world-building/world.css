@@ -24,12 +24,58 @@ body {
     height: 1196px;
 }
 
+/* nav styling */
+
 nav {
-    background-color: red;
     grid-column: 3 / 5;
-    grid-row: 1 / 2;
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+input[type=range].styled-slider {
+    height: 2.2em;
+    -webkit-appearance: none;
+    background-color: transparent;
+    filter: drop-shadow(2px 1px 4px #a2c4b0);
+  }
+  
+input[type=range].styled-slider:focus {
+outline: none;
+}
+
+input[type=range].styled-slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+width: 2em;
+height: 2em;
+border-radius: 1em;
+background: #FFFFFF;
+border: none;
+margin-top: calc(max((1em - 1px - 1px) * 0.5,0px) - 2em * 0.5);
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+height: 1em;
+border-radius: 0.5em;
+background: linear-gradient(to right, #EFEFEF, #B7DCC6);
+box-shadow: none;
+}
+
+input[type=range].styled-slider:hover::-webkit-slider-runnable-track {
+background: linear-gradient(to right, #E5E5E5, #B7DCC6);
+}
+
+input[type=range].styled-slider:active::-webkit-slider-runnable-track {
+background: linear-gradient(to right, #F5F5F5, #B7DCC6);
+}
+
+.styled-slider {
+    margin-top: 4%;
+}
+
+
+/* title styling */
 .title1 {
     display: flex;
     flex-direction: column;
@@ -49,10 +95,12 @@ nav {
     color: #ffe8e8;
 }
 
+
+/* text styling */
 .info1 {
-    position: fixed;
-    left: 610px;
-    top: 174px;
+    position: sticky;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
 }
 
 .info-style {
@@ -65,6 +113,7 @@ nav {
     text-align: right;
     margin: 0;
 }
+
 .text-style {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 450;
@@ -88,3 +137,4 @@ nav {
     color: #ffffff;
     margin: 0;
 }
+
