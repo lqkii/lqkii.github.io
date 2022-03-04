@@ -1,9 +1,6 @@
-var thumbNumber = 0
+var range = document.getElementById('slider')
 
-window.onload = function () {
-    var slider = document.getElementById("slider");
-    slider.addEventListener("input", function () {
-        document.body.style.setProperty("--thumbNumber", "'" + this.value + "'");
-
-        console.log(thumbNumber)
-    });}
+if(range.value <= 20) {
+    // document.location.pathname = "/pages/numb.html";
+    console.log("swag");
+}
