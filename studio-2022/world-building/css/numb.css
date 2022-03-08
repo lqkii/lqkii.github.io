@@ -1,8 +1,3 @@
-@font-face {
-    font-family: Aegithalos;
-    src: url(assets/aegithalos.otf);
-}
-
 /* fantasy love body */
 body {
     background-color: #ffffff;
@@ -69,5 +64,5 @@ body {
 
 /* nav styling */
 input[type=range].styled-slider {
-    filter: drop-shadow(2px 1px 4px #c4c4c4);
+    filter: drop-shadow(2px 1px 4px #d4d4d4);
   }
