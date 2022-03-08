@@ -23,12 +23,7 @@ rangeSlider.oninput = function() {
     location.href = "/studio-2022/world-building/pages/fantasy-love.html";
     }  
 
-    if(rangeSlider.value ==20 && increase == 0) {
-    //   console.log("swag");
-      location.href = "/studio-2022/world-building/pages/index-back.html";
-    }
-
-    if(rangeSlider.value ==5 && increase == 0) {
+    if(rangeSlider.value ==4 && increase == 0) {
         //   console.log("swag");
           location.href = "../index.html";
     }
