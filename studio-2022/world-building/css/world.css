@@ -32,7 +32,6 @@ input[type=range].styled-slider {
     height: 2.2em;
     -webkit-appearance: none;
     background-color: transparent;
-    filter: drop-shadow(2px 1px 4px #a2c4b0);
   }
   
 input[type=range].styled-slider:focus {
@@ -74,9 +73,7 @@ background: linear-gradient(to right, #F5F5F5, #B7DCC6);
     font-weight: 450;
     font-size: 1.3em;  
     line-height: 1.1em;
-    color: #ffffff;
     opacity: 50%;
-    text-align: right;
     margin: 0;
 }
 
@@ -85,7 +82,6 @@ background: linear-gradient(to right, #F5F5F5, #B7DCC6);
     font-weight: 450;
     font-size: 1.3em;  
     line-height: 1.1em;
-    color: #ffffff;
     opacity: 50%;
     margin: 0;
 }
@@ -96,6 +92,5 @@ background: linear-gradient(to right, #F5F5F5, #B7DCC6);
     font-weight: 450;
     font-size: 1.3em;  
     line-height: 1.1em;
-    color: #ffffff;
     margin: 0;
 }
