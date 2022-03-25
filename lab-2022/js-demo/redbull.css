@@ -1,0 +1,67 @@
+html {
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: Kaftan;
+    src: url(assets/kaftan.otf);
+}
+
+body {
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background: #5a32b9;
+}
+
+.redbull {
+    position: absolute;
+    width: 10rem;
+    height: 16rem;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+}
+
+.text {
+    font-family: Kaftan;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30vh;
+    position: absolute;
+    color: #ebd03c;
+    text-decoration: none;
+}
+
+.click {
+    font-family: Kaftan;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 50vh;
+    position: absolute;
+    color: #ebd03c;
+    text-decoration-thickness: 0.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+  }
+
+@media only screen and (min-width: 1024px) {
+    .text {
+        font-size: 6rem;
+    }
+
+    .redbull {
+        width: 12rem;
+        height: 19rem;
+    }
+  }
