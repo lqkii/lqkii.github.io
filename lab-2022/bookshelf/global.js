@@ -3,13 +3,13 @@ var base = new Airtable({apiKey: 'keykaT2ngbNPOcisw'}).base('appYKWx2UDYt1lbYy')
 
 base('Table 1').select({
     // Selecting the first 3 records in Grid view:
-    maxRecords: 10,
+    maxRecords: 3,
     view: "Grid view"
 }).eachPage(function page(records, fetchNextPage) {
     // This function (`page`) will get called for each page of records.
 
     records.forEach(function(record) {
-        console.log('Retrieved', record.get('Name'));
+        console.log('Retrieved', record.get('book name'));
     });
 
     // To fetch the next page of records, call `fetchNextPage`.
@@ -22,4 +22,4 @@ base('Table 1').select({
 });
 
 console.log(Airtable);
-console.log("Hello bookshelf")
+console.log("Hello bookshelf");
