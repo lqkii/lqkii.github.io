@@ -9,7 +9,7 @@ base('books').select({
     // This function (`page`) will get called for each page of records.
 
     records.forEach(function(record) {
-        console.log('Retrieved', record.get('book name'));
+        console.log('Retrieved', record.get('book_name'));
     });
 
     // To fetch the next page of records, call `fetchNextPage`.
