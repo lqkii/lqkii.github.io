@@ -9,7 +9,12 @@ var base = new Airtable({apiKey: 'keykaT2ngbNPOcisw'}).base(
     'appYKWx2UDYt1lbYy');
 
 //get "books" from table from airtable database
-base("books").select({}).eachPage(gotPageOfBooks, gotAllBooks);
+// base("books").select({}).eachPage(gotPageOfBooks, gotAllBooks);
+
+//ADD VIEW to get a select "view" "books" from table from airtable database
+base("books").select({
+  view: "manga"
+}).eachPage(gotPageOfBooks, gotAllBooks);
 
 //empty array to hold our book data
 const books = [];
