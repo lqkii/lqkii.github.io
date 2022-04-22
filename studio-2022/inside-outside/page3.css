@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Nostra;
+    src: url(assets/Nostra-Stream-Trial.otf);
+}
+
+@font-face {
+    font-family: Editorial New;
+    src: url(assets/EditorialNew-Regular.otf);
+}
+
+body {
+    background-color: #fafaf3;
+    margin: 0 auto 2em auto;
+    max-width: 65%;
+}
+
+#list {
+  margin-bottom: 2%;
+  font-family: Editorial New;
+  font-weight: 300;
+  color: rgb(49, 46, 46);
+}
+
+h1 {
+    font-family: Nostra;
+    font-weight: 300;
+    color: rgb(49, 46, 46);
+    font-size: 5rem;
+    margin-bottom: 2%;
+}
+
+h2 {
+    font-family: Editorial New;
+    font-weight: 300;
+    color: rgb(49, 46, 46);
+    line-height: 120%;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(49, 46, 46);
+}
+
+.more {
+    font-family: Editorial New;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* what do you want your shelf to look like? HINT: play with line 27 if you don't want to see that line later - it's helpful for now, as we can see our shelf*/
+.shelftop {
+    border-bottom: 1px solid rgb(49, 46, 46); 
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1%;
+  }
+
+.shelf {
+    border-bottom: 1px solid rgb(49, 46, 46); 
+    margin-bottom: 2em; 
+    display: flex;
+    align-items: flex-end;
+  }
+  
+/* styling the books on the shelf- play with lines 38-42 or delete them and comment in lines 43-47 if you want thin spines of books */
+.shelf .book-spine {
+    background: rgb(218, 198, 175);
+    color: rgb(49, 46, 46);
+    height: 250px;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 1%;
+    margin-right: 2px; 
+
+    /*   height: 300px;
+    width: fit-content; 
+    padding: 10px 0px; */
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    line-height: 24px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    font-family: Editorial New;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.4px;
+  }
+  
+.shelf .book-spine.active {
+    background: rgb(179, 204, 109);
+  }
+  
+.shelf .book-spine:hover {
+    background: rgb(221, 213, 203);
+  }
+  
+/* book detail is CSS that pertains to the details that will show when we click on a book  */
+.book-detail {
+    display: flex;
+    margin-top: 30px;
+  }
+  
+.book-detail .figure {
+    width: 200px;
+    flex: none;
+    margin-right: 30px;
+  }
+  
+.book-detail .cover-image {
+    width: 100%;
+  /*   border: 5px solid black; */
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+.book-detail .info {
+    max-width: 600px;
+  }
+  
+.book-detail .title {
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+  
+.book-detail .description {
+    font-family: Editorial New;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0.5em;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+/* make it responsive */
+@media (max-width: 600px) {
+.book-detail {
+    flex-direction: column;
+    }
+.book-detail .figure {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 2em;
+    }
+  }
+
+/* add this to hide our placeholder  */
+.hidden {
+  display: none !important;
+}
+
+a:link {
+    color: rgb(179, 204, 109);
+}
+
+a:hover {
+    color: rgb(221, 213, 203);
+}

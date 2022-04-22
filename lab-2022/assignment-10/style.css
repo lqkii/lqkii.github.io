@@ -115,6 +115,86 @@ h3 {
     transition-property: transform, width, height;
 }
 
+.cursor-small-left {
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0deg);
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1) ;
+    opacity: 0%;
+    transition-property: transform, width, height, opacity;
+}
+
+.cursor-small-hover-left {
+    transform: translate(-650%, -50%) rotate(0deg);
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1) s;
+    opacity: 100%;
+    transition-property: transform, width, height, opacity;
+}
+
+.cursor-small-right {
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0deg);
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.2s;
+    opacity: 0%;
+    transition-property: transform, width, height, opacity;
+}
+
+.cursor-small-hover-right {
+    transform: translate(550%, -50%) rotate(0deg);
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.2s;
+    opacity: 100%;
+    transition-property: transform, width, height, opacity;
+}
+
+.cursor-small-bot {
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0deg);
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.3s;
+    opacity: 0%;
+    transition-property: transform, width, height, opacity;
+}
+
+.cursor-small-hover-bot {
+    transform: translate(-50%, 550%) rotate(0deg);
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.3s;
+    opacity: 100%;
+    transition-property: transform, width, height, opacity;
+}
+
+.cursor-small-top {
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0deg);
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.1s;
+    opacity: 0%;
+    transition-property: transform, width, height, opacity;
+}
+
+.cursor-small-hover-top {
+    transform: translate(-50%, -550%) rotate(0deg);
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.1s;
+    opacity: 100%;
+    transition-property: transform, width, height, opacity;
+}
+
 .invert {
     height: 100vh;
     width: 100vw;

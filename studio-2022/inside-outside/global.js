@@ -1,24 +1,12 @@
-var Airtable = require('airtable');
-var base = new Airtable({apiKey: 'keykaT2ngbNPOcisw'}).base('app6XF7zFvhc7FFN9');
+// let video = document.querySelector(".video")
+const homeBg = document.querySelector(".home_bg")
 
-base('Table 1').select({
-    // Selecting the first 3 records in Grid view:
-    maxRecords: 50,
-    view: "Grid view"
-}).eachPage(function page(records, fetchNextPage) {
-    // This function (`page`) will get called for each page of records.
+this.document.addEventListener("keydown", space)
 
-    records.forEach(function(record) {
-        console.log('Retrieved', record.get('Name'));
-    });
-
-    // To fetch the next page of records, call `fetchNextPage`.
-    // If there are more records, `page` will get called again.
-    // If there are no more records, `done` will get called.
-    fetchNextPage();
-
-}, function done(err) {
-    if (err) { console.error(err); return; }
-});
-
-console.log(Airtable);
+function space(e) {
+    if(e.keyCode === 32) { 
+        console.log("swag");
+        // location.href = "/studio-2022/inside-outside/pages/page2.html";
+        // video.setAttribute("src", "assets/background.mp4");
+        homeBg.classList.add("invisible");
+    }}
