@@ -11,9 +11,21 @@ var base = new Airtable({apiKey: 'keykaT2ngbNPOcisw'}).base(
 //get "books" from table from airtable database
 // base("books").select({}).eachPage(gotPageOfBooks, gotAllBooks);
 
+//testing filter dropdown
+var	filterVal = "main";
+
+function filterList(){
+	filterVal = this.value;
+  console.log(filterVal);
+}
+document.getElementById("list").onchange = filterList;
+//idk why this isn't working
+
+
+
 //ADD VIEW to get a select "view" "books" from table from airtable database
 base("books").select({
-  view: "manga"
+  view: filterVal
 }).eachPage(gotPageOfBooks, gotAllBooks);
 
 //empty array to hold our book data
