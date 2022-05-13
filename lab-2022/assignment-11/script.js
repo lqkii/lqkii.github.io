@@ -1,11 +1,13 @@
-//I thought this snake game was a pretty simple but cool way to see how the code would work
+// codepen: https://codepen.io/CaioPaiola/pen/nojJmQ
+
+//I found this cool & simple snake game, and was curious to see how it worked
 
 // Variables!!
  var Game      = Game      || {};
  var Keyboard  = Keyboard  || {}; 
  var Component = Component || {};
  
- // Keymapping
+ // Keymapping - setting directions corresponding to key presses
  Keyboard.Keymap = {
    37: 'left',
    38: 'up',
